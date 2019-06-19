@@ -1,0 +1,19 @@
+button {
+    font-size: 14px;
+}
+
+.todo-list-container {}
+
+.todo-list {}
+
+.todo-complete {
+    text-decoration: line-through;
+    font-style: italic;
+    color: gray;
+}
+
+.todo-active {}
+
+.btn-filter-selected {
+    background-color: green;
+}

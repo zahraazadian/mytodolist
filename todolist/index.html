@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My TODO</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id="title">
+        <h1>My To Do</h1>
+    </div>
+
+    <form onsubmit="add(); event.preventDefault()">
+        <input id="input" type="text" placeholder="What needs to be done?">
+        <button onclick="add()"> Add</button>
+    </form>
+
+    <div class="todo-list-container" style="background-color:yellow">
+        <ul id="todoList" class="todo-list"> </ul>
+    </div>
+
+    <div >
+        <button id="all" onclick="applyFilter('all')">All</button>
+        <button id="active" onclick="applyFilter('active')">Active</button>
+        <button id="complete" onclick="applyFilter('complete')">Complete</button>
+        <button id="removed" onclick="applyFilter('removed')">removed</button>
+    </div>
+
+
+    <div id="uplist">
+    </div>
+
+    <script src="view.js"></script>
+    <script src="app.js"></script>
+    </script>
+</body>
+
+</html>
