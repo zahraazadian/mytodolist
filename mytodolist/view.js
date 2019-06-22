@@ -1,15 +1,30 @@
 var todoListUl = document.getElementById('todoList');
+
 var filterButtons = [
-    document.getElementById('all'),
-    document.getElementById('active'),
-    document.getElementById('complete'),
-    document.getElementById('removed')];
+    document.getElementById('allId'),
+    document.getElementById('activeId'),
+    document.getElementById('completeId'),
+    document.getElementById('removedId')];
 
 function render(todos, removeFn, completeFn) {
     
     filterButtons.forEach(function (b, i) {
         b.className = i === model.filter ? 'btn-filter-selected' : 'btn-filter';
     });
+
+
+    // for(var buttonIndex=0 ; buttonIndex<filterButtons.length ; buttonIndex++)
+    // {
+    //     var button = filterButtons[i];
+
+    //     // var isThisButtonSelected = buttonIndex === model.filter;
+
+    //     if (model.filter === buttonIndex ){
+    //         button.className = 'btn-filter-selected';
+    //     } else{
+    //         button.className = 'btn-filter'
+    //     }
+    // }
 
     todoListUl.innerHTML = '';
     if (todos.length == 0) {

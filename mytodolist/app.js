@@ -1,5 +1,16 @@
-var filter = { all: 0, active: 1, complete: 2, removed: 3 };
-var model = { todos: [], filter: filter.all };
+var filter = {
+     all: 0, 
+     active: 1, 
+     complete: 2, 
+     removed: 3 
+    };
+
+var model = {
+    todos: [],
+     filter: filter.all
+    };
+
+
 var input = document.getElementById('input');
 
 
